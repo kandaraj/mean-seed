@@ -1,0 +1,27 @@
+{
+  "name": "sample",
+  "version": "0.0.1",
+  "authors": [
+    "Bandula Gamage"
+  ],
+  "description": "AngularJS web app seed",
+  "main": "app/public/index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "appPath": "app",
+  "dependencies": {
+    "angular": "~1.4.8",
+    "angular-ui-router": "~0.2.12",
+    "angular-bootstrap": "~1.1.2",
+    "jquery": "~2.2.0",
+    "bootstrap": "~3.3.6",
+    "fontawesome": "~4.5.0",
+    "metisMenu": "~2.4.0",
+    "animate.css": "https://github.com/daneden/animate.css.git#~3.2.0",
+    "angular-mocks": "latest"
+  }
+}

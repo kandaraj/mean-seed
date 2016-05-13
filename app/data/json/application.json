@@ -1,0 +1,135 @@
+/**
+ Should be used for HTTP POST -> /api/application/,
+                                 /api/application/submit
+                    HTTP GET  -> /api/application/:appID
+*/
+
+{
+  "_id":	0,
+
+  "main": {
+    "application": {
+      "app_type":           "",
+      "agreement_type":     "",
+      "status":             "",
+      "lodgement_date":     "",
+      "start_date":         "",
+      "due_date":           "",
+      "cust_contact_date":  "",
+      "created_by":         "",
+      "assigned_to":        ""
+    },
+    "company": {
+      "acc_no": "",
+      "slid": "",
+      "comp_name": "",
+      "trading_name": "",
+      "abn": "",
+      "hours": [
+        {
+          "day_from":   "",
+          "day_to":     "",
+          "time_from":  ""
+        }
+      ]
+    },
+    "address": {
+      "property": {
+        "unit_desc":      "",
+        "unit_no":        "",
+        "floor_level":    "",
+        "house_no":       "",
+        "street":         "",
+        "suburb":         "",
+        "postcode":       0,
+        "contacts":       [
+          {
+            "given":          "",
+            "surname":        "",
+            "pref_name":      "",
+            "position":       "",
+            "contact_type":   ""
+          }
+        ]
+      },
+      "postal": {
+        "comp_name":      "",
+        "flat":           "",
+        "house_no":       "",
+        "street":         "",
+        "po_box":         "",
+        "suburb":         "",
+        "postcode":       0,
+        "country":        ""
+      },
+      "billing": {
+        "comp_name":      "",
+        "flat":           "",
+        "house_no":       "",
+        "street":         "",
+        "po_box":         "",
+        "suburb":         "",
+        "postcode":       0,
+        "country":        ""
+      },
+      "registered": {
+        "comp_name":      "",
+        "flat":           "",
+        "house_no":       "",
+        "street":         "",
+        "po_box":         "",
+        "suburb":         "",
+        "postcode":       0,
+        "country":        ""
+      }
+    }
+  },
+  "industry": {
+    "industry_type":          "",
+    "activities": [
+      {
+        "principal":      "",
+        "activity":       ""
+      }
+    ],
+    "process_desc":           "",
+    "scap_id":                "",
+    "scap_name":              "",
+    "yvw_tp":                 ""
+  },
+  "contaminants": {
+    "selected": [
+      {
+        "name": "",
+        "desc": ""
+      }
+    ]
+  },
+  "processes": {
+    // TODO - Not implemented with prototype
+  },
+  "plans": {
+    // TODO - Not implemented with prototype
+  },
+  "authorizations": {
+    "position":               "",
+    "name":                   "",
+    "signature_date":         "",
+    "comments":               ""
+  },
+  "interactions": {
+    // TODO - Not implemented with prototype
+  },
+  "documents": {
+    "documents": [
+      {
+        "id":             "",
+        "received_date":  "",
+        "uploaded_date":  "",
+        "type":           "",
+        "category":       "",
+        "desc":           ""
+      }
+    ]
+  }
+}

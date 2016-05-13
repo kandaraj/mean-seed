@@ -1,0 +1,15 @@
+{
+  "DB_USER":            "dbUser",
+  "DB_PASSWORD":        "dbPassword",
+  "DB_SERVER":          "dbServerURL",
+  "DATABASE":           "dbDatabase",
+
+  "JSON_PROCESS_HOUR":  13,
+  "JSON_PROCESS_MINUTE":35,
+
+  "MONGO_DB_SERVER":    "localhost",
+  "MONGO_DB_PORT":      "27017",
+  "MONGO_DB_DATABASE":  "test",
+
+  "OUTPUT_RESULTSET_SIZE":"20"
+}

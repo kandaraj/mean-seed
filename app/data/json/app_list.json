@@ -1,0 +1,7 @@
+/**
+ Should be used for HTTP GET  -> /api/application/
+*/
+
+[
+  application
+]
