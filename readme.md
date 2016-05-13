@@ -1,6 +1,6 @@
-# angular-seed — the seed for AngularJS apps
+# mean-seed — the seed for MEAN Stack apps
 
-This is a seed for an AngularJS application with multiple modules and moderate complexity.
+This is a seed for an MEAN stack application with multiple modules and moderate complexity.
 You can use it to quickly bootstrap your angular webapp projects and dev environment for these
 projects.
 
