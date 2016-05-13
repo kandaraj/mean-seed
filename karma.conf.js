@@ -19,12 +19,14 @@ module.exports = function(config) {
       'bower_components/angular-ui-router/release/angular-ui-router.js',
       'bower_components/angular-mocks/angular-mocks.js',
       'bower_components/angular-bootstrap/ui-bootstrap.js',
-      'bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
-      //'bower_components/angular-spinner/angular-spinner.min.js',
-      //'bower_components/spin.js/spin.js',
+      'app/public/libs/angular-bootstrap/ui-bootstrap-tpls.js',
+      'app/public/libs/angular-spinner/angular-spinner.min.js',
+      'app/public/libs/spin.js/spin.js',
       'app/public/scripts/**/*.directives.js',
+      //'app/public/scripts/**/*.filters.js',
+      'app/public/scripts/*.js',
       'app/public/features/**/*.mod.js',
-      //'app/**/*.js',
+      'app/public/**/*.js',
       'tests/**/*.js',
 
       // fixtures
