@@ -12,21 +12,21 @@ The seed app doesn't do much, just shows how to wire two controllers and views t
 
 ## Getting Started
 
-To get you started you can simply clone the angular-seed repository and install the dependencies:
+To get you started you can simply clone the mean-seed repository and install the dependencies:
 
-### Clone angular-seed
+### Clone mean-seed
 
-Clone the angular-seed repository using [git][git]:
+Clone the mean-seed repository using [git][git]:
 
 ```
-git clone https://github.com/ugbandula/angular-seed.git
-cd angular-seed
+git clone https://github.com/ugbandula/mean-seed
+cd mean-seed
 ```
 
-If you just want to start a new project without the angular-seed commit history then you can do:
+If you just want to start a new project without the mean-seed commit history then you can do:
 
 ```bash
-git clone --depth=1 https://github.com/ugbandula/angular-seed.git <your-project-name>
+git clone --depth=1 https://github.com/ugbandula/mean-seed <your-project-name>
 ```
 
 The `depth=1` tells git to only pull down one commit worth of historical data.
