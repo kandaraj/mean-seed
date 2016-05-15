@@ -7,7 +7,7 @@ describe("sample app routing", function () {
   beforeEach(function () {
 
     // set up the appl
-    module('sample');
+    module('sample.main.routers');
 
     // set up injector to get reference and templates
     inject(function($state, $urlRouter, $rootScope, $templateCache, $location){
@@ -20,6 +20,7 @@ describe("sample app routing", function () {
     });
 
   });
+
 
   it("should redirect to root route", function () {
     stateProvider.transitionTo("/");
