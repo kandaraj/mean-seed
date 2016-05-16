@@ -4,7 +4,7 @@
 'use strict';
 
 angular
-    .module('sample')
+    .module('sample.main.routers',  ['ui.router'])
     .config(['$stateProvider', '$urlRouterProvider',
         function ($stateProvider, $urlRouterProvider) {
             $stateProvider
@@ -32,4 +32,3 @@ angular
             $urlRouterProvider.otherwise("/");
         }
     ]);
-
