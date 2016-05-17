@@ -33,5 +33,10 @@
   "author": {
     "email": "ugbandula@gmail.com",
     "name": "Bandula Gamage"
+  },
+  "devDependencies": {
+    "mockery": "^1.7.0",
+    "sinon": "^1.17.4",
+    "sinon-mongoose": "^1.2.1"
   }
 }
