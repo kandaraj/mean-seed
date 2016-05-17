@@ -60,7 +60,7 @@ module.exports = {
       }
   },
 
-  deleteUser: function(req, resr) {
+  deleteUser: function(req, res) {
       // There are several approaches
       // 1. User.find({ username:req.params.username }).remove( callback );
       // 2. User.find({ username:req.params.username }).remove().exec();
