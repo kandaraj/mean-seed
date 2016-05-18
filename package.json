@@ -5,7 +5,9 @@
   "scripts": {
     "start": "node --harmony ./app/bin/www",
     "test": "karma start karma.conf.js --browsers PhantomJS --single-run",
-    "node-tests": "mocha --recursive node-tests/spec/**/*spec.js"
+    "node-test": "mocha node-tests/spec/**/*spec.js  -R spec",
+    "node-test-coverage": "istanbul cover node_modules/mocha/bin/_mocha  -- node-tests/spec/**/*spec.js",
+    "e2e-test": "webdriver-manager.cmd start && protractor.cmd e2e-tests/protractor.conf.js"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
@@ -37,6 +39,7 @@
     "name": "Bandula Gamage"
   },
   "devDependencies": {
+    "istanbul": "^0.4.3",
     "karma-coverage": "^1.0.0",
     "mockery": "^1.7.0",
     "sinon": "^1.17.4",
