@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node --harmony ./app/bin/www"
+    "start": "node --harmony ./app/bin/www",
+    "test": "karma start karma.conf.js --browsers PhantomJS --single-run",
+    "node-tests": "mocha --recursive node-tests/spec/**/*spec.js"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
@@ -35,6 +37,7 @@
     "name": "Bandula Gamage"
   },
   "devDependencies": {
+    "karma-coverage": "^1.0.0",
     "mockery": "^1.7.0",
     "sinon": "^1.17.4",
     "sinon-mongoose": "^1.2.1"

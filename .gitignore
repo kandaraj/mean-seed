@@ -3,6 +3,7 @@
 /node_modules/
 /bower_components/
 /tmp/
+/coverage/
 /scripts/bower/bower-*
 regression/temp*.html
 performance/temp*.html

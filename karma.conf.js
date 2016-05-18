@@ -19,13 +19,11 @@ module.exports = function(config) {
       'bower_components/angular-ui-router/release/angular-ui-router.js',
       'bower_components/angular-mocks/angular-mocks.js',
       'bower_components/angular-bootstrap/ui-bootstrap.js',
-      'bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
-      'bower_components/angular-spinner/angular-spinner.min.js',
-      'app/public/libs/spin.js/spin.js',
+      'bower_components/angular-bootstrap/ui-bootstrap-tpls.js',      
       'app/public/scripts/**/*.directives.js',
       'app/public/scripts/*.js',
       'app/public/features/**/*.mod.js',
-      'app/public/**/*.js',
+      'app/public/!(libs)/**/*.js', // dont include the libs
       'tests/**/*.js',
 
       // fixtures
@@ -38,12 +36,22 @@ module.exports = function(config) {
 
     ],
 
-    plugins : ['karma-jasmine', 'karma-phantomjs-launcher', 'karma-chrome-launcher'],
+    plugins : ['karma-jasmine', 'karma-phantomjs-launcher', 'karma-chrome-launcher', 'karma-coverage'],
 
     // test results reporter to use
     // possible values: 'dots', 'progress', 'junit', 'growl', 'coverage'
-    reporters: ['progress'],
+    reporters: ['progress', 'coverage'],
 
+    coverageReporter : {
+      type : 'html',
+      dir : 'coverage/'
+    },
+
+    preprocessors: {
+      // source files, that you wanna generate coverage for
+      // do not include tests or libraries
+      'app/**/*.js' : ['coverage'],
+    },
 
     // web server port
     port: 9876,
