@@ -12,6 +12,7 @@ var config      = require('../../config/config');
 ///////////////////////////////////////////////////////////////
 module.exports = {
     listRecords: function (req, res) {
+      
     },
 
     saveRecord: function (req, res) {
