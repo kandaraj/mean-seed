@@ -15,11 +15,11 @@ module.exports = function(config) {
     files: [
       'node_modules/jquery/dist/jquery.js',
       'node_modules/jasmine-jquery/lib/jasmine-jquery.js',
-      'bower_components/angular/angular.js',
-      'bower_components/angular-ui-router/release/angular-ui-router.js',
-      'bower_components/angular-mocks/angular-mocks.js',
-      'bower_components/angular-bootstrap/ui-bootstrap.js',
-      'bower_components/angular-bootstrap/ui-bootstrap-tpls.js',      
+      'node_modules/angular/angular.js',
+      'node_modules/angular-ui-router/release/angular-ui-router.js',
+      'node_modules/angular-mocks/angular-mocks.js',
+      'node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js',
+      'node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js',
       'app/public/scripts/**/*.directives.js',
       'app/public/scripts/*.js',
       'app/public/features/**/*.mod.js',
@@ -33,7 +33,7 @@ module.exports = function(config) {
 
     // list of files to exclude
     exclude: [
-
+      'app/public/bower_components/**/*.js'
     ],
 
     plugins : ['karma-jasmine', 'karma-phantomjs-launcher', 'karma-chrome-launcher', 'karma-coverage'],

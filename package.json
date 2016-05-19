@@ -39,6 +39,11 @@
     "name": "Bandula Gamage"
   },
   "devDependencies": {
+    "angular": "^1.4.10",
+    "angular-mocks": "^1.5.5",
+    "angular-ui-bootstrap": "^1.1.2",
+    "angular-ui-router": "^0.2.18",
+    "expect": "^1.20.1",
     "istanbul": "^0.4.3",
     "karma-coverage": "^1.0.0",
     "mockery": "^1.7.0",
